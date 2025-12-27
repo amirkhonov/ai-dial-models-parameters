@@ -1,7 +1,7 @@
 import uuid
 from dataclasses import dataclass, field
 
-from task.models.message import Message
+from models.message import Message
 
 
 @dataclass
@@ -14,4 +14,3 @@ class Conversation:
 
     def get_messages(self) -> list[Message]:
         return self.messages
-    
